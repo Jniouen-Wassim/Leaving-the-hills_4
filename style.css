@@ -1,0 +1,111 @@
+@font-face {
+    font-family: XPLOR;
+    src: url(./assets/fonts/XPLOR\ Bold-Regular.otf);
+  }
+html,
+body {
+    background-color: #1C1F22;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: XPLOR;
+}
+h1{
+    font-size: 70px;
+}
+main{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70vh;
+}
+.container_IconButton{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    justify-content: center;
+}
+.container_IconButton i{
+    margin-bottom: 30px;
+    color: white;
+}
+.container_IconButton i:hover{
+    transform: scale(1.1);
+  animation-name: icons;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+/*============ ICON ANIMATION ==============*/
+@keyframes icons {
+    100% {
+        text-shadow: 2px 2px 12px  #00B4D8;
+    }
+  }
+/* ======================= BUTTON STYLE =================== */
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    font-size: large;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: #00B4D8;
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #111
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+button a{
+    color: white;
+    text-decoration: none;
+}
+button a:visited{
+    display: none;
+    text-decoration: none;
+}
