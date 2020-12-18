@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: black;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+}
+
+#first {
+    position: fixed;
+    margin: 0;
+    opacity: 1;
+    
+  
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+    margin-bottom: 5%;
+
+}
+
+.digital{
+    margin: 10px;
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid rgb(138, 108, 166);;
+    border-radius: 15px;
+
+}
+
+.calendar{
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+   
+}
+
+.day{
+    padding-right: 8px;
+   
+}
+
+#heure.hour{
+    /* background-color: yellow; */
+    font-size: 40px;
+    
+}
+
+/*   */
+.container_clock {
+    position: relative;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 8px solid black;
+    background-color: rgb(138, 108, 166,0.5);
+    background-image: url(img/pngfind.com-horloge-png-3437413.png);
+    background-size: cover;
+}
+
+.needle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: bottom;
+    border-radius: 2px;
+}
+
+.hr {
+    width: 3px;
+    height: 20%;
+    background-color: rgb(15, 0, 100);
+}
+
+.min {
+    width: 2px;
+    height: 35%;
+    background-color: rgb(15, 0, 100);
+}
+
+.sec {
+    width: 1px;
+    height: 20%;
+    background-color: crimson;
+}
