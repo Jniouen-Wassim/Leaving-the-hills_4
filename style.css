@@ -1,18 +1,28 @@
 body{
     background-color: black;
-    margin: 0;
-    padding: 0;
+ 
 }
-
+ 
 .allCard{
    margin-top: 30vh;
   
 }
 
-button{
-background-color: blueviolet;
+/* .cardBody{
+  
+} */
+
+.aLogo{
+  color: blueviolet;
 }
 
-a{
+.btn{
+background-color: brown;
+
+}
+
+.aText{
+  color: bisque;
   text-decoration: none;
+
 }
