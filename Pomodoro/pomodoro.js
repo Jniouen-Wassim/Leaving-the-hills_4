@@ -38,7 +38,7 @@ pause.addEventListener('click', function () {
 
 reset.addEventListener('click', function () {
     
-    body.style.filter = "grayscale(60%)";
+   // body.style.filter = "grayscale(60%)";
     reset.style.filter = "none";
     start.style.filter = "brightness(180%)";
     pause.style.filter = "brightness(180%)";
