@@ -10,40 +10,41 @@ html, body {
   align-items: center;
   justify-content: center;
   background-color: #141218;
-  color: white
+  color: white ;
+
 }
 
 .rect{
-    border-radius: 15px 2px 15px 2px ;
-    box-shadow: 10px 5px 30px hsla(210, 40%, 52%, .4);
-    background-color: transparent;
-    font-size: 30px;
-    padding: 10%;
-    width: 700px;
+  border-radius: 15px 2px 15px 2px ;
+  box-shadow: 10px 5px 30px hsla(210, 40%, 52%, .4);
+  background-color: transparent;
+  font-size: 30px;
+  padding: 10%;
+  width: 700px;
    
     
 }
 
 .btn-primary{
-    padding: 0;
-    font-size: 20px;
-    margin-top: 2%;
-    width: 70px;
+  padding: 0;
+  font-size: 20px;
+  margin-top: 2%;
+  width: 70px;
     
 }
 
 /*======================================== Titre Effect ==============================================*/
 
 .border{
-    padding: 8px 0px 0px 80px; /*Position du h1*/
-    border-radius: 15px 2px 15px 2px ;
-    box-shadow: 10px 5px 30px hsla(210, 40%, 52%, .4);
+  padding: 8px 0px 0px 80px; /*Position du h1*/
+  border-radius: 15px 2px 15px 2px ;
+  box-shadow: 10px 5px 30px hsla(210, 40%, 52%, .4);
 	
 	background: linear-gradient(110deg, #141218 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(110deg, white 34%, #156BC1 34%);
-	height: 80px;
-    background-position: 25% 50%;
-    font-family: 'Pacifico', cursive;
-    border: 0px solid  !important;
+  height: 80px;
+  background-position: 25% 50%;
+  font-family: 'Pacifico', cursive;
+  border: 0px solid  !important;
     
 	-webkit-animation: Gradient 15s ease infinite;
   -moz-animation: Gradient 5s ease infinite;
@@ -51,7 +52,7 @@ html, body {
 }
 .inner-cutout{
 	display: block;
-    margin: 2%;
+  margin: 2%;
 
 }
 .knockout {
@@ -66,14 +67,14 @@ html, body {
 	color: #fff;
 	
 	-webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    font-weight: bold;
+  -webkit-background-clip: text;
+  font-weight: bold;
 
 }
 .knockout{
-		animation: Gradient 5s ease infinite;
-		-webkit-animation: Gradient 15s ease infinite;
-        -moz-animation: Gradient 5s ease infinite;
+	animation: Gradient 5s ease infinite;
+	-webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 5s ease infinite;
         
 }
 
@@ -86,14 +87,13 @@ html, body {
 	}
 	100% {
 		background-position: 30% 50%
-	}
-	
+	}	
 }
 
 .main{
     margin-bottom: 15px;
     margin-top: 10%;
-    
+
 }
 
 
@@ -157,25 +157,12 @@ button:focus {
 button::after{
   font-weight: 200;
   top: -30px;
-  left: -20px;
+  
 } 
 
-.right, .left {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-}
-.right {
-  left: 66%;
-}
-.left {
-  right: 66%;
-}
 .right::after {
   top: -30px;
-  left: calc(-66% - 20px);
-  
+ 
   background-color: var(--bg-color);
   color:transparent;
   transition: transform .4s ease-out;
@@ -190,9 +177,6 @@ button .right:hover::after {
   transform: translate(0, -50%) rotate(-7deg)
 }
 
-button .left:hover ~ .right::after {
-  transform: translate(0, -50%) rotate(7deg)
-}
 
 /* bubbles */
 button::before {
@@ -207,7 +191,6 @@ button::before {
   width: 100%;
   height: 300%;
   top: 0;
-  left: 0;
   position: absolute;
   animation: bubbles 5s linear infinite both;
 }

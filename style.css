@@ -21,8 +21,7 @@ body {
   background: url("./assets/img/collineSpace.jpg")no-repeat fixed;
   background: cover;
   font-family: "a-space_demoregular";
-  filter:blur(px);
-
+ 
 }
 
 h1 {
@@ -30,14 +29,13 @@ h1 {
   border-radius: 0 0 50% 50%;
   background-color: rgb(0, 0, 0, 0.4);
   color: rgb(173, 219, 183, 1);
-
   font-family: "nebularegular";
   font-size: 250%;
 
 }
 
 .allCard {
-  margin-top: 20vh;
+  margin-top: 15vh;
 
 }
 
@@ -46,6 +44,12 @@ i{
   border-radius: 10%;
   box-shadow: 0px 0px 30px 20px rgb(0, 0, 0, 0.7);
   padding: 20px;
+   filter:blur(200px); /* Pour que le logo disparaît */
+  
+}
+
+i:hover{
+   filter:blur(0px); /* Pour que le logo réapparaît */
   
 }
 
@@ -57,7 +61,7 @@ i{
 .btn {
   background-color:  rgb(0, 0, 0, 0.5) ;
   font-weight: bold;
-
+  
 }
 
 .aText {
@@ -76,12 +80,14 @@ i{
 .title-Neon {
   color: white ;
   animation: neon 3s infinite;
+  
 }
 
-.logo-Neon:hover {
-  color: white;
-  filter:brightness(0%);
-  animation: neon 3s infinite;
+.logo-Neon {
+  color: white ;
+  animation: neon 3s infinite ;
+  opacity: 0.9;
+  
 }
 
 @keyframes neon {

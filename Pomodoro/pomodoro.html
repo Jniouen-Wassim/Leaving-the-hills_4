@@ -16,16 +16,17 @@
     <main>
 
         <!-- <h1 class="d-flex justify-content-around"> Pomodoro </h1> -->
-        <div class="main">
-            <div class = "border">
-                <div class = "inner-cutout"> 
-                    <h1 class="knockout d-flex justify-content-around">Pomodoro</h1>
+        <header>
+            <div class="main">
+                <div class="border">
+                    <div class="inner-cutout">
+                        <h1 class="knockout d-flex justify-content-around">Pomodoro</h1>
+                    </div>
                 </div>
             </div>
-        </div>
-        
-        
-        <section class="d-flex justify-content-center">
+        </header>
+
+        <!-- <section class="d-flex justify-content-center">
             <div class="rect">
                 <div class=" row row-cols-3 justify-content-around text-center">
                     <p>Travail</p>
@@ -44,21 +45,54 @@
                         <div class="left"></div>
                         Start
                     </button>
-
-                    <button id="pause" class="btn btn-primary">
-                        <div class="left"></div>
-                        Pause
-                    </button>
-
+                    
                     <button id="reset" class="btn btn-primary">
                         <div class="left"></div>
                         Reset
                     </button>
 
+                    <button id="pause" class="btn btn-primary">
+                        <div class="left"></div>
+                        Pause
+                    </button>
                 </div>
             </div>
-        </section>
+        </section> -->
 
+
+        <div id="container" class="rect">
+
+            <div class="d-flex justify-content-around text-center">
+                <p id="work" class="label"> Work </p>
+                <p id="cycles" class="label"> Cycles </p>
+                <p id="break" class="label"> Break </p>
+                
+            </div>
+            <!-- travail -->
+            <div class="d-flex justify-content-around">
+                <div id="work-timer" class="timer d-flex">
+                    <p id="workMinutes"> 1 </p>
+                    <p class="semicoloc"> : </p>
+                    <p id="workSeconds"> 00 </p>
+                </div>
+
+                <p id="compteur" class="timer mx-5"> 0 </p>
+
+                <!-- pause  -->
+                <div id="break-timer" class="timer d-flex">
+                    <p id="breakMinutes"> 5 </p>
+                    <p class="semicoloc"> : </p>
+                    <p id="breakSeconds"> 00 </p>
+                </div>
+
+            </div>
+
+            <div class="row justify-content-around">
+                <button id="start" class="bouton btn btn-primary">Start</button>
+                <button id="pause" class="bouton btn btn-primary">Pause</button>
+                <button id="reset" class="bouton btn btn-primary">Reset</button>
+            </div>
+        </div>
     </main>
 
 
