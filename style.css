@@ -58,25 +58,30 @@ i:hover{
 }
 
 .btn {
-  /*background-color:  rgb(0, 0, 0, 0.5) ;*/
   font-weight: bold;
-
-  color: white ;
+  color: white ; 
+  
+  /* background-color:  rgb(0, 0, 0, 0.5) ;
   animation: neon 3s infinite ;
-  opacity: 0.9;
+  opacity: 0.9; */
   
 }
 
 .btn:hover{
   color: white ;
   animation: neon 3s infinite ;
-  opacity: 0.8;
+  opacity: 0.9;
   
 }
 
 .aText {
-  color:  #14176B;
+  /* color:  #14176B; */
   text-decoration: none;
+
+}
+
+.aText:hover {
+  font-size: 18px;
 
 }
 
@@ -90,7 +95,7 @@ i:hover{
 }
 
 .title-Neon {
-  color:  #14176B ; /* #14176B (ou) white */
+  color:  white ; /* #14176B (ou) white */
   animation: neon 3s infinite;
   
 }
