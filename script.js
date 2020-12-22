@@ -1,5 +1,6 @@
 
 //================================= Début Collection ============================================//
+
 let collection = [{
  logo: "logo-Neon fab fa-10x fa-markdown" ,
  link:"./MarkdownEditor/markdown.html", 
@@ -30,10 +31,13 @@ let collection = [{
   title: "Paint",
  },
 ];
-//================================= Collection Fin ============================================//
-//================================= Début DOM  ============================================//
+
+//=======================================================================( "Début DOM" )==========================================//
+
 const sectionContainer = document.querySelector("section");
 sectionContainer.innerHTML= "" ;
+
+let i = 0 ;
 
 for (let element of collection ) {
   
@@ -54,12 +58,15 @@ for (let element of collection ) {
   Logo.appendChild(a_Logo)
 
   let i_Logo = document.createElement('i')
+  i_Logo.id = `voirIcon${i}`
   i_Logo.className = element.logo
   a_Logo.appendChild(i_Logo)
 
   //------------------( Div: Text )------------------//
   
   let Text = document.createElement('div')
+  Text.id = `containerIcon${i}`
+  console.log(Text.id);
   cardBody.appendChild(Text)
 
   let a_Text = document.createElement('a')
@@ -69,6 +76,30 @@ for (let element of collection ) {
   a_Text.textContent = element.title;
   Text.appendChild(a_Text)
  
+  i++;
 }
-//================================= DOM fin ============================================//
-//================================= "click Event" ============================================//
+
+//=====================================================================( "click Event" )==========================================//
+
+
+// for (let y=0 ; y < collection.length ; y++) {
+ 
+//   let a_containerIcon = document.getElementById(`containerIcon${y}`);
+//   let i_voirIcon = document.getElementById(`voirIcon${i}`);
+
+//    console.log(i_voirIcon);
+//   a_containerIcon.addEventListener('mouseover', function () {
+//     a_containerIcon.style.backgroundColor = "red";
+//     /* i_voirIcon.style.filter = "filter:blur(0px);"  Pour que le logo réapparaît */
+    
+// })
+
+//   a_containerIcon.addEventListener('mouseout', function () {
+    
+//     a_containerIcon.style.backgroundColor = "transparent";
+//     /* i_voirIcon.style.filter = "filter:blur(200px);"  Pour que le logo disparaît */
+  
+// })
+
+// }
+

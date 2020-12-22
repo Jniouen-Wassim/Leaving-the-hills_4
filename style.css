@@ -27,11 +27,12 @@ body {
 h1 {
   padding: 5vh;
   border-radius: 0 0 50% 50%;
-  background-color: rgb(0, 0, 0, 0.4);
-  color: rgb(173, 219, 183, 1);
+  background-color: rgb(0, 0, 0, 0.8);
+  color: rgb(173, 219, 183);
   font-family: "nebularegular";
   font-size: 250%;
-
+  font-weight: bold;
+ 
 }
 
 .allCard {
@@ -44,51 +45,62 @@ i{
   border-radius: 10%;
   box-shadow: 0px 0px 30px 20px rgb(0, 0, 0, 0.7);
   padding: 20px;
-   filter:blur(200px); /* Pour que le logo disparaît */
+  /* filter:blur(200px); Pour que le logo disparaît */
   
 }
 
 i:hover{
-   filter:blur(0px); /* Pour que le logo réapparaît */
-  
-}
-
-.aLogo:hover{
-  font-size: 130%;
-  
+   /* filter:blur(0px);  Pour que le logo réapparaît */
+   color: white ;
+   animation: neon 3s infinite ;
+   opacity: 0.9;
+   
 }
 
 .btn {
-  background-color:  rgb(0, 0, 0, 0.5) ;
+  /*background-color:  rgb(0, 0, 0, 0.5) ;*/
   font-weight: bold;
-  
-}
 
-.aText {
-  color:  rgb(255, 255, 255, 1);
-  text-decoration: none;
-  
-}
-
-/*===================================== Effect Title ==========================================*/
-
-:root {
-  --shadow-color: #14176B;
-  --shadow-color-light: white;
-}
-
-.title-Neon {
-  color: white ;
-  animation: neon 3s infinite;
-  
-}
-
-.logo-Neon {
   color: white ;
   animation: neon 3s infinite ;
   opacity: 0.9;
   
 }
+
+.btn:hover{
+  color: white ;
+  animation: neon 3s infinite ;
+  opacity: 0.8;
+  
+}
+
+.aText {
+  color:  #14176B;
+  text-decoration: none;
+
+}
+
+
+/*===================================== Effect Title ==========================================*/
+
+:root {
+  --shadow-color:  #14176B;
+  --shadow-color-light: white;
+
+}
+
+.title-Neon {
+  color:  #14176B ; /* #14176B (ou) white */
+  animation: neon 3s infinite;
+  
+}
+
+/* .logo-Neon {
+  color: white ;
+  animation: neon 3s infinite ;
+  opacity: 0.9;
+  
+} */
 
 @keyframes neon {
   0% {
