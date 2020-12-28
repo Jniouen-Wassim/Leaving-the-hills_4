@@ -54,7 +54,7 @@ for (let element of collection ) {
   let a_Logo = document.createElement('a')
   a_Logo.className = "aLogo"
   a_Logo.href = element.link
-  //a_Logo.target = "_blank"
+  a_Logo.target = "_blank"
   Logo.appendChild(a_Logo)
 
   let i_Logo = document.createElement('i')
@@ -72,7 +72,7 @@ for (let element of collection ) {
   let a_Text = document.createElement('a')
   a_Text.className = "aText btn mt-4"
   a_Text.href = element.link
-  //a_Text.target = "_blank"
+  a_Text.target = "_blank"
   a_Text.textContent = element.title;
   Text.appendChild(a_Text)
  
