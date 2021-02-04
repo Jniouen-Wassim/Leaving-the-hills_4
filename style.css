@@ -21,7 +21,7 @@ body {
   background: url("./assets/img/collineSpace_\(1920x1080\).jpg")no-repeat fixed;
   background: cover;
   font-family: "a-space_demoregular";
- 
+  height: 100vh;
 }
 
 h1 {
@@ -47,6 +47,14 @@ i{
   padding: 20px;
   /* filter:blur(200px); Pour que le logo disparaît */
   
+}
+
+#voirIcon3{
+  color: rgba(71, 183, 195, 0.8) !important;
+}
+
+#aText3{
+  color: rgba(71, 183, 195, 0.8) !important;
 }
 
 i:hover{
@@ -84,6 +92,8 @@ i:hover{
   font-size: 18px;
 
 }
+
+
 
 /*===================================== Effect Title ==========================================*/
 
