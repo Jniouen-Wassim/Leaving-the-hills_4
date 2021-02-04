@@ -13,22 +13,26 @@ let collection = [{
   title: "POMODOROTIMER",
  },
 
+
+
  {
   logo: "logo-Neon far fa-10x fa-window-maximize" ,
   link:"./Horloge-Time/Horloge.html", 
   title: "LANDING PAGE",
  },
 
- {
-  logo: "logo-Neon fas fa-10x fa-question-circle" ,
-  link:"../Quizz-Api/quizz-Api.html", 
-  title: "QUIZZ",
- },
+ 
 
  {
   logo: "logo-Neon fas fa-10x fa-paint-brush",
   link:"./Paint/paint.html", 
-  title: "Paint",
+  title: "PAINT",
+ },
+ 
+ {
+  logo: "logo-Neon fas fa-10x fa-undo-alt",
+  link:"https://jniouen-wassim.github.io/My-portfolio/", 
+  title: "PORTFOLIO",
  },
 ];
 

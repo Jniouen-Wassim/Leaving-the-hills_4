@@ -8,10 +8,8 @@ function melanger() {
         
             data.results[0].incorrect_answers[1],
         
-            data.results[0].incorrect_answers[2],
-        
+            data.results[0].incorrect_answers[2],    
     ]
-
     const button = document.querySelector('.allButton')
 
     const random = randomAnswer[Math.floor(Math.random()*randomAnswer.length)]

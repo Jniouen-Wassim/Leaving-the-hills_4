@@ -12,10 +12,11 @@ main {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+
 }
 
 button {
-    width: 80px;
+    width: 180px;
     padding: 2px;
 }
 
