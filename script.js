@@ -21,7 +21,7 @@ let collection = [{
 
  {
   logo: "logo-Neon fas fa-10x fa-question-circle" ,
-  link:"../Quizz-Api/quizz-Api.html", 
+  link:"./Quizz-Api/quizz-Api.html", 
   title: "QUIZZ",
  },
 
