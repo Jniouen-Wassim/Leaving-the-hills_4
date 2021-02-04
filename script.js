@@ -21,14 +21,13 @@ let collection = [{
   title: "LANDING PAGE",
  },
 
- 
 
  {
   logo: "logo-Neon fas fa-10x fa-paint-brush",
   link:"./Paint/paint.html", 
   title: "PAINT",
  },
- 
+
  {
   logo: "logo-Neon fas fa-10x fa-undo-alt",
   link:"https://jniouen-wassim.github.io/My-portfolio/", 
