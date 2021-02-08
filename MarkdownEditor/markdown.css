@@ -58,7 +58,6 @@ h3{
 
 .preview{
     height: 80vh;
-    width: 40vw;
     border: 1px solid black;
     resize: none;
     overflow-wrap: break-word;
